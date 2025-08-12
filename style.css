@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    place-content: center;
+    background-color: gray;
+    display: grid;
+}
+
+.quadro {
+    display: flex;
+    background-color: blue;
+    width: 1000px;
+    height: 250px;
+    gap: 30px;
+}
+
+.cards {
+    width: 230px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
