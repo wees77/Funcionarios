@@ -7,16 +7,16 @@
 body {
     height: 100vh;
     place-content: center;
-    background-color: rgb(209, 209, 209);
+    background-color: #f3f3f3;
     display: grid;
 }
 
 .quadro {
     display: flex;
-    background-color: rgb(209, 209, 209);
+    background-color: #f3f3f3;
     max-width: 1000px;
     width: 100%;
-    gap: 30px;
+    gap: 15px;
 }
 
 .cards {
@@ -30,6 +30,7 @@ body {
     background-color: white;
     display: flex;
     border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 img {
