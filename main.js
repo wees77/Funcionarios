@@ -1,21 +1,26 @@
-'use stricts'
+'use strict'
 
 import funcionarios from "./funcionarios.json" with {type: "json"}
 
 console.log(funcionarios)
 
-function criarFuncionario(scrImagem) {
+function criarFuncionario(funcionario) {
     const cards = document.createElement('div')
-    const quadro = document.getElementById('quadro')
-    const img = document.createElement('img')
-    const nome = document.createElement('h2')
-    const cargo = document.createElement('span')
     cards.classList.add('cards')
+    
+    const nome = document.createElement('h1')
+    nome.textContent = funcionario.nome
+    
+    const cargo = document.createElement('span')
+    cargo.textContent = funcionario.cargo
+
+    const img = document.createElement('img')
+    
     img.classList.add('img')
-    img.scr = scrImagem.imagem
-   
-    quadro.appendChild(cards)
-    cards.appendChild(img)
+    img.src = funcionario.imagem
+
+    document.getElementById('quadro').appendChild(cards)
+    cards.append(img, nome, cargo)
 
 }
 
